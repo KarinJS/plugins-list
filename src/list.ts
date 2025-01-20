@@ -1,4 +1,4 @@
-import { Plugin } from "./src/types"
+import { Plugin } from "./types"
 
 const list: Plugin[] = [
   {
