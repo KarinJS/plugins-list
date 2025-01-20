@@ -1,0 +1,16 @@
+{
+  "name": "karin-plugins-list",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "app": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.2"
+  }
+}

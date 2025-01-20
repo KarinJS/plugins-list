@@ -1,0 +1,43 @@
+name: Auto Upload
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run upload script
+        env:
+          API: ${{ secrets.API }}
+        run: npm run app
+      
+      - name: Push plugins.json
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 克隆目标仓库
+          git clone https://${{ secrets.PAT }}@github.com/KarinJS/files.git temp_repo
+          
+          # 复制并提交plugins.json
+          cp plugins.json temp_repo/
+          cd temp_repo
+          git add plugins.json
+          git commit -m "chore: update plugins.json [skip ci]"
+          git push 
