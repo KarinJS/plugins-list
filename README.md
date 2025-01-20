@@ -124,3 +124,23 @@ const list: Plugin[] = [
 ## 许可证
 
 本仓库采用 MIT 许可证
+
+## 预览
+
+### github
+
+```bash
+https://raw.githubusercontent.com/KarinJS/files/refs/heads/main/plugins.json
+```
+
+### gitee
+
+```bash
+https://gitee.com/KarinJS/files/raw/main/plugins.json
+```
+
+### gitcode
+
+```bash
+https://raw.gitcode.com/karinjs/file/raw/main/plugins.json
+```
