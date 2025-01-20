@@ -23,8 +23,6 @@ jobs:
         run: npm install
 
       - name: Run upload script
-        env:
-          API: ${{ secrets.API }}
         run: npm run app
       
       - name: Push plugins.json
