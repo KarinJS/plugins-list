@@ -6,7 +6,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import list from './list'
 
-const JSON_PATH = path.resolve(__dirname, 'plugins.json')
+const JSON_PATH = path.join(__dirname, '..', 'plugins.json')
 
 const data = JSON.stringify(list, null, 2)
 fs.writeFileSync(JSON_PATH, data)
