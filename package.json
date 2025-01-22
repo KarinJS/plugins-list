@@ -7,7 +7,6 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "app": "node src/index.js",
     "validate": "node scripts/validate.js"
   }
 }

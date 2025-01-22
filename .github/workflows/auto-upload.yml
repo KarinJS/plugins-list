@@ -118,9 +118,17 @@ jobs:
           # 克隆目标仓库
           git clone https://${{ secrets.PAT }}@github.com/KarinJS/files.git temp_repo
           
-          # 复制并提交plugins.json
+          # 复制 plugins.json
           cp plugins.json temp_repo/
           cd temp_repo
+          
+          # 检查是否有文件变动
+          if git diff --quiet; then
+            echo "plugins.json 没有变动，跳过提交"
+            exit 0
+          fi
+          
+          # 有变动则提交
           git add plugins.json
           git commit -m "chore: update plugins.json [skip ci]"
           git push 

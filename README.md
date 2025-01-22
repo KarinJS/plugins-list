@@ -63,7 +63,7 @@
 
 ### 示例
 
-在 `src/plugins.json.json` 文件中的 `plugins` 数组末尾添加你的插件信息。以下是不同类型插件的示例：
+在 `plugins.json` 文件中的 `plugins` 数组末尾添加你的插件信息。以下是不同类型插件的示例：
 
 ```json
 {
