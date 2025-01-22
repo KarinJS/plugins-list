@@ -1,4 +1,3 @@
-
 # Karin 插件仓库
 
 这是 Karin 的官方插件仓库，用于收集和管理社区贡献的插件。
@@ -64,62 +63,114 @@
 
 ### 示例
 
-在`list.ts`中继续添加即可
+在 `src/plugins.json.json` 文件中的 `plugins` 数组末尾添加你的插件信息。以下是不同类型插件的示例：
 
-```typescript
-const list: Plugin[] = [
-  {
-    name: '基础插件',
-    package_name: 'karin-plugin-basic',
-    type: 'npm',
-    description: 'karin plugin basic',
-    license: 'MIT',
-    time: '2025-01-19 10:00:00',
-    author: [
-      {
-        name: 'shijin',
-        email: 'shijin520@gmail.com',
-        home: 'https://github.com/sj817',
-      },
-    ],
-    repo: [
-      {
-        type: 'github',
-        url: 'https://github.com/karinjs/karin-plugin-basic',
-      },
-    ],
-  },
-  {
-    name: '基础插件',
-    package_name: 'karin-plugin-basic',
-    type: 'npm',
-    description: 'karin plugin basic',
-    license: 'MIT',
-    time: '2025-01-19 10:00:00',
-    author: [
-      {
-        name: 'shijin',
-        email: 'shijin520@gmail.com',
-        home: 'https://github.com/sj817',
-      },
-    ],
-    repo: [
-      {
-        type: 'github',
-        url: 'https://github.com/karinjs/karin-plugin-basic',
-      },
-    ],
-  }
-]
+```json
+{
+  "plugins": [
+    // NPM 插件示例
+    {
+      "name": "NPM插件示例",
+      "package_name": "karin-plugin-example",
+      "type": "npm",
+      "description": "这是一个 NPM 插件示例",
+      "license": "MIT",
+      "time": "2024-03-19 10:00:00",
+      "author": [
+        {
+          "name": "作者名字",
+          "email": "author@example.com",
+          "home": "https://github.com/username"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/username/karin-plugin-example"
+        }
+      ]
+    },
+
+    // Git 插件示例
+    {
+      "name": "Git插件示例",
+      "package_name": "karin-plugin-git-example",
+      "type": "git",
+      "description": "这是一个 Git 插件示例",
+      "license": "MIT",
+      "time": "2024-03-19 10:00:00",
+      "install_command": "git clone --depth=1 https://github.com/username/plugin-repo.git ./plugins/karin-plugin-git-example",
+      "author": [
+        {
+          "name": "作者名字",
+          "email": "author@example.com",
+          "home": "https://github.com/username"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/username/plugin-repo"
+        }
+      ]
+    },
+
+    // App 插件示例
+    {
+      "name": "App插件示例",
+      "package_name": "karin-plugin-app-example",
+      "type": "app",
+      "description": "这是一个 App 插件示例",
+      "license": "MIT",
+      "time": "2024-03-19 10:00:00",
+      "install_command": "https://example.com/download/plugin.zip",
+      "author": [
+        {
+          "name": "作者名字",
+          "email": "author@example.com",
+          "home": "https://github.com/username"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/username/app-plugin-repo",
+          "remark": "源码仓库"
+        },
+        {
+          "type": "gitee",
+          "url": "https://gitee.com/username/app-plugin-repo",
+          "remark": "国内镜像"
+        }
+      ]
+    }
+  ]
+}
 ```
+
+### 插件类型说明
+
+1. **NPM 插件** (`type: "npm"`)
+   - 直接通过 npm 安装
+   - 无需提供 `install_command`
+
+2. **Git 插件** (`type: "git"`)
+   - 通过 git clone 安装
+   - 需要提供 `install_command`，格式为：
+     ```bash
+     git clone --depth=1 仓库地址 ./plugins/${package_name}
+     ```
+
+3. **App 插件** (`type: "app"`)
+   - 通过下载压缩包方式安装
+   - 需要提供 `install_command`，填写文件直链地址
+   - 建议提供国内外多个下载源
 
 ## 注意事项
 
-- package_name 必须是唯一的，且在 npm 上可用
-- 时间格式必须严格遵循 "YYYY-MM-DD HH:mm:ss" 格式
-- 所有 URL 必须是有效的且可访问的
-- 建议使用 MIT 或其他开源协议
-- 确保你的插件文档完整，包含安装和使用说明
+- 请确保将新插件添加到 `plugins` 数组的末尾
+- package_name 必须是唯一的
+- 对于 App 类型插件，建议提供多个下载源以提高可用性
 
 ## 许可证
 

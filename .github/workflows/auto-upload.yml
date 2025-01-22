@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate plugins list
+        id: validate
+        run: npm run validate
+
       - name: Run upload script
         id: build
         run: |
@@ -32,6 +36,28 @@ jobs:
             exit 1
           }
           echo "::set-output name=build_output::$OUTPUT"
+
+      - name: Comment on PR if validation fails
+        if: ${{ failure() && github.event_name == 'pull_request' && steps.validate.outcome == 'failure' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const output = `❌ 插件列表验证失败，请检查以下问题：
+
+            \`\`\`
+            ${process.env.BUILD_OUTPUT}
+            \`\`\`
+
+            请按照文档规范修改插件信息。`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: output
+            })
+        env:
+          BUILD_OUTPUT: ${{ steps.validate.outputs.build_output }}
 
       - name: Comment on PR if build fails
         if: ${{ failure() && github.event_name == 'pull_request' }}

@@ -5,12 +5,9 @@
   "keywords": [],
   "license": "MIT",
   "author": "",
-  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "app": "tsx src/index.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^22.5.0",
-    "tsx": "^4.19.2"
+    "app": "node src/index.js",
+    "validate": "node scripts/validate.js"
   }
 }
