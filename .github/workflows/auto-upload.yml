@@ -28,15 +28,6 @@ jobs:
         id: validate
         run: npm run validate
 
-      - name: Run upload script
-        id: build
-        run: |
-          OUTPUT=$(npm run app 2>&1) || {
-            echo "::set-output name=build_output::$OUTPUT"
-            exit 1
-          }
-          echo "::set-output name=build_output::$OUTPUT"
-
       - name: Comment on PR if validation fails
         if: ${{ failure() && github.event_name == 'pull_request' && steps.validate.outcome == 'failure' }}
         uses: actions/github-script@v7
