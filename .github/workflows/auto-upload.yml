@@ -77,15 +77,18 @@ jobs:
         run: |
           # 创建一个临时目录来存放预览文件
           mkdir -p preview
-          cp plugins.json preview/
+          # 运行 cp 命令更新 package.json
+          npm run cp
+          # 复制预览文件
+          cp package.json preview/
           echo "预览文件已准备完成"
 
       - name: Upload preview artifacts
         if: ${{ github.event_name == 'pull_request' }}
         uses: actions/upload-artifact@v4
         with:
-          name: plugins-json-preview
-          path: preview/plugins.json
+          name: preview-files
+          path: preview/package.json
           retention-days: 5
 
       - name: Comment on PR if build succeeds
@@ -97,29 +100,32 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.name,
-              body: '✅ 编译成功！\n\n插件列表已生成，请在 Actions 的 Artifacts 中下载 plugins.json 进行预览。\n如果预览无误，可以合并PR。'
+              body: '✅ 编译成功！\n\n预览文件已生成，请在 Actions 的 Artifacts 中下载 package.json 进行预览。\n如果预览无误，可以合并PR。'
             })
       
-      - name: Push plugins.json for main branch
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      # - name: Push package.json for main branch
+      #   if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      #   run: |
+      #     git config --global user.name 'github-actions[bot]'
+      #     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # 克隆目标仓库
-          git clone https://${{ secrets.PAT }}@github.com/KarinJS/files.git temp_repo
+      #     # 先运行 cp 命令更新 package.json
+      #     npm run cp
           
-          # 复制 plugins.json
-          cp plugins.json temp_repo/
-          cd temp_repo
+      #     # 克隆目标仓库
+      #     git clone https://${{ secrets.PAT }}@github.com/KarinJS/files.git temp_repo
           
-          # 检查是否有文件变动
-          if git diff --quiet; then
-            echo "plugins.json 没有变动，跳过提交"
-            exit 0
-          fi
+      #     # 复制 package.json
+      #     cp package.json temp_repo/
+      #     cd temp_repo
           
-          # 有变动则提交
-          git add plugins.json
-          git commit -m "chore: update plugins.json [skip ci]"
-          git push 
+      #     # 检查是否有文件变动
+      #     if git diff --quiet; then
+      #       echo "package.json 没有变动，跳过提交"
+      #       exit 0
+      #     fi
+          
+      #     # 有变动则提交
+      #     git add package.json
+      #     git commit -m "chore: update package.json [skip ci]"
+      #     git push 

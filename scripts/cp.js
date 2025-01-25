@@ -16,6 +16,7 @@ const main = () => {
 
   targetData.plugins = sourceData.plugins
   fs.writeFileSync(target, JSON.stringify(targetData, null, 2))
+  console.log('[karinjs/plugins-list] success')
 }
 
 main()
