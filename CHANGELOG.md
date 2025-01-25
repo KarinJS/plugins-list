@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/KarinJS/plugins-list/compare/v1.1.0...v1.1.1) (2025-01-25)
+
+
+### Bug Fixes
+
+* raw url ([475e68a](https://github.com/KarinJS/plugins-list/commit/475e68a83e561392d07d8ac608aeb90158e48e07))
+* 验证npm ([3189096](https://github.com/KarinJS/plugins-list/commit/31890963e0bcedaec3043de74af9782962e817c4))
+
 ## [1.1.0](https://github.com/KarinJS/plugins-list/compare/v1.0.0...v1.1.0) (2025-01-25)
 
 
