@@ -35,24 +35,38 @@ const isValidUrl = (url) => {
  * @param {object} plugin 
  */
 const validateBaseFields = (plugin) => {
-  const requiredFields = ['name', 'package_name', 'type', 'description', 'license', 'time', 'author', 'repo']
+  const requiredFields = ['name', 'type', 'description', 'license', 'time', 'author', 'repo']
 
   for (const field of requiredFields) {
     if (!plugin[field]) {
-      throw new Error(`插件 ${plugin.package_name || '未知'} 缺少必填字段: ${field}`)
+      throw new Error(`插件 ${plugin.name || '未知'} 缺少必填字段: ${field}`)
     }
   }
 
   if (!isValidTimeFormat(plugin.time)) {
-    throw new Error(`插件 ${plugin.package_name} 的时间格式不正确，应为 YYYY-MM-DD HH:mm:ss`)
+    throw new Error(`插件 ${plugin.name} 的时间格式不正确，应为 YYYY-MM-DD HH:mm:ss`)
+  }
+
+  if (plugin.description.length > 50) {
+    throw new Error(`插件 ${plugin.name} 的描述长度超过50个字符`)
+  }
+
+  // 验证 license
+  if (!plugin.license.name || !plugin.license.url || !isValidUrl(plugin.license.url)) {
+    throw new Error(`插件 ${plugin.name} 的许可证信息不完整或URL无效`)
   }
 
   if (!Array.isArray(plugin.author) || plugin.author.length === 0) {
-    throw new Error(`插件 ${plugin.package_name} 的作者信息格式不正确`)
+    throw new Error(`插件 ${plugin.name} 的作者信息格式不正确`)
   }
 
   if (!Array.isArray(plugin.repo) || plugin.repo.length === 0) {
-    throw new Error(`插件 ${plugin.package_name} 的仓库信息格式不正确`)
+    throw new Error(`插件 ${plugin.name} 的仓库信息格式不正确`)
+  }
+
+  const type = ['github', 'gitee', 'gitcode', 'gitlab', 'npm']
+  if (!type.includes(plugin.type)) {
+    throw new Error(`插件 ${plugin.name} 的类型 ${plugin.type} 无效`)
   }
 }
 
@@ -63,13 +77,10 @@ const validateBaseFields = (plugin) => {
 const validateAuthor = (plugin) => {
   for (const author of plugin.author) {
     if (!author.name) {
-      throw new Error(`插件 ${plugin.package_name} 的作者缺少名称`)
+      throw new Error(`插件 ${plugin.name} 的作者缺少名称`)
     }
     if (!author.home || !isValidUrl(author.home)) {
-      throw new Error(`插件 ${plugin.package_name} 的作者主页 URL 无效`)
-    }
-    if (author.email && !author.email.includes('@')) {
-      throw new Error(`插件 ${plugin.package_name} 的作者邮箱格式无效`)
+      throw new Error(`插件 ${plugin.name} 的作者主页 URL 无效`)
     }
   }
 }
@@ -79,30 +90,15 @@ const validateAuthor = (plugin) => {
  * @param {object} plugin 
  */
 const validateRepo = (plugin) => {
-  const validTypes = ['github', 'gitee', 'gitlab', 'gitcode']
+  const validTypes = ['github', 'gitee', 'gitlab', 'gitcode', 'npm']
 
   for (const repo of plugin.repo) {
     if (!validTypes.includes(repo.type)) {
-      throw new Error(`插件 ${plugin.package_name} 的仓库类型 ${repo.type} 无效`)
+      throw new Error(`插件 ${plugin.name} 的仓库类型 ${repo.type} 无效`)
     }
     if (!repo.url || !isValidUrl(repo.url)) {
-      throw new Error(`插件 ${plugin.package_name} 的仓库 URL 无效`)
+      throw new Error(`插件 ${plugin.name} 的仓库 URL 无效`)
     }
-  }
-}
-
-/**
- * 验证 Git 类型插件
- * @param {object} plugin 
- */
-const validateGitPlugin = (plugin) => {
-  if (!plugin.install_command) {
-    throw new Error(`Git 类型插件 ${plugin.package_name} 缺少 install_command`)
-  }
-
-  const commandPattern = new RegExp(`git clone --depth=1 .+ ./plugins/${plugin.package_name}$`)
-  if (!commandPattern.test(plugin.install_command)) {
-    throw new Error(`Git 类型插件 ${plugin.package_name} 的 install_command 格式不正确`)
   }
 }
 
@@ -111,12 +107,14 @@ const validateGitPlugin = (plugin) => {
  * @param {object} plugin 
  */
 const validateAppPlugin = (plugin) => {
-  if (!plugin.install_command) {
-    throw new Error(`App 类型插件 ${plugin.package_name} 缺少 install_command`)
+  if (!Array.isArray(plugin.files) || plugin.files.length === 0) {
+    throw new Error(`App 类型插件 ${plugin.name} 缺少 files 数组`)
   }
 
-  if (!isValidUrl(plugin.install_command)) {
-    throw new Error(`App 类型插件 ${plugin.package_name} 的 install_command 必须是有效的 URL`)
+  for (const fileUrl of plugin.files) {
+    if (!isValidUrl(fileUrl)) {
+      throw new Error(`App 类型插件 ${plugin.name} 的文件URL无效: ${fileUrl}`)
+    }
   }
 }
 
@@ -125,12 +123,12 @@ const validateAppPlugin = (plugin) => {
  * @param {object[]} plugins 
  */
 const validateUniquePackages = (plugins) => {
-  const packageNames = new Set()
+  const names = new Set()
   for (const plugin of plugins) {
-    if (packageNames.has(plugin.package_name)) {
-      throw new Error(`发现重复的 package_name: ${plugin.package_name}`)
+    if (names.has(plugin.name)) {
+      throw new Error(`发现重复的插件名称: ${plugin.name}`)
     }
-    packageNames.add(plugin.package_name)
+    names.add(plugin.name)
   }
 }
 
@@ -146,20 +144,12 @@ const main = async () => {
       validateAuthor(plugin)
       validateRepo(plugin)
 
-      switch (plugin.type) {
-        case 'npm':
-          if (plugin.install_command) {
-            throw new Error(`NPM 类型插件 ${plugin.package_name} 不需要 install_command`)
-          }
-          break
-        case 'git':
-          validateGitPlugin(plugin)
-          break
-        case 'app':
-          validateAppPlugin(plugin)
-          break
-        default:
-          throw new Error(`插件 ${plugin.package_name} 的类型 ${plugin.type} 无效`)
+      if (plugin.type === 'app') {
+        validateAppPlugin(plugin)
+      } else if (plugin.type === 'git' || plugin.type === 'npm') {
+        // 什么都不做
+      } else {
+        throw new Error(`插件 ${plugin.name} 的类型 ${plugin.type} 无效`)
       }
     }
 

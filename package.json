@@ -1,5 +1,5 @@
 {
-  "name": "karin-plugins-list",
+  "name": "@karinjs/plugins-list",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,6 +7,8 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate.js"
+    "cp": "node scripts/cp.js",
+    "validate": "node scripts/validate.js",
+    "pub": "npm publish --access public"
   }
 }

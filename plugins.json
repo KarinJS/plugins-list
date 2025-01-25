@@ -1,16 +1,17 @@
 {
   "plugins": [
     {
-      "name": "基础插件",
-      "package_name": "karin-plugin-basic",
+      "name": "karin-plugin-basic",
       "type": "npm",
       "description": "karin plugin basic",
-      "license": "MIT",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/karinjs/karin-plugin-basic/blob/main/LICENSE"
+      },
       "time": "2025-01-19 10:00:00",
       "author": [
         {
           "name": "shijin",
-          "email": "shijin520@gmail.com",
           "home": "https://github.com/sj817"
         }
       ],
@@ -18,6 +19,28 @@
         {
           "type": "github",
           "url": "https://github.com/karinjs/karin-plugin-basic"
+        }
+      ]
+    },
+    {
+      "name": "karin-plugin-kkk",
+      "type": "npm",
+      "description": "咕咕咕 ~",
+      "license": {
+        "name": "GPL-3.0",
+        "url": "https://github.com/ikenxuan/karin-plugin-kkk/blob/main/LICENSE"
+      },
+      "time": "2025-01-25 22:47:37",
+      "author": [
+        {
+          "name": "ikenxuan",
+          "home": "https://github.com/ikenxuan"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/ikenxuan/karin-plugin-kkk"
         }
       ]
     }
