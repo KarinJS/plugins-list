@@ -3,6 +3,13 @@
 ## 1.0.0 (2025-01-25)
 
 
+### Bug Fixes
+
+* init ([baf8a52](https://github.com/KarinJS/plugins-list/commit/baf8a52e8d21a95c9c8835755c4e961cfc9130e7))
+
+## 1.0.0 (2025-01-25)
+
+
 ### Features
 
 * init ([1624a19](https://github.com/KarinJS/plugins-list/commit/1624a198173098a4c9c290418d213066e76583d1))
