@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/KarinJS/plugins-list/compare/v1.0.0...v1.1.0) (2025-01-25)
+
+
+### Features
+
+* 默认分支 插件主页 ([9686017](https://github.com/KarinJS/plugins-list/commit/9686017d0ea3d805e057c2b64401cbee286a2869))
+
 ## 1.0.0 (2025-01-25)
 
 
