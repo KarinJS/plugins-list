@@ -41,3 +41,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # 同步npm包
+      - run: npm run sync
+        if: ${{ steps.release.outputs.release_created }}
