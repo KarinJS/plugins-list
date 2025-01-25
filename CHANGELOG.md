@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/KarinJS/plugins-list/compare/v1.0.0...v1.0.1) (2025-01-25)
+
+
+### Bug Fixes
+
+* init ([baf8a52](https://github.com/KarinJS/plugins-list/commit/baf8a52e8d21a95c9c8835755c4e961cfc9130e7))
+
 ## 1.0.0 (2025-01-25)
 
 
