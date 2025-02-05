@@ -12,33 +12,21 @@ permissions:
   pull-requests: write
 
 jobs:
-  check-comment:
-    if: ${{ github.event_name == 'issue_comment' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check PR comment
-        id: check
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const comment = context.payload.comment.body;
-            const isPR = !!context.payload.issue.pull_request;
-            
-            if (!isPR || !comment.includes('/check')) {
-              console.log('不是 PR 评论或不包含检查命令');
-              return;
-            }
-            
-            core.setOutput('should_run', 'true');
-
   validate-and-update:
-    needs: check-comment
     if: |
       github.event_name == 'pull_request' || 
-      (github.event_name == 'issue_comment' && needs.check-comment.outputs.should_run == 'true')
+      (github.event_name == 'issue_comment' && 
+       contains(github.event.comment.body, '/check') && 
+       github.event.issue.pull_request)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        if: github.event_name == 'issue_comment'
+        with:
+          ref: ${{ github.event.comment.pull_request.head.sha }}
+      
+      - uses: actions/checkout@v4
+        if: github.event_name == 'pull_request'
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -51,7 +39,7 @@ jobs:
       - name: Run validation
         id: validate
         run: |
-          npm run validate > validate_output.txt 2>&1 || echo "::set-output name=validate_failed::true"
+          npm run validate > validate_output.txt 2>&1 || echo "validate_failed=true" >> $GITHUB_OUTPUT
           
       - name: Comment validation result
         uses: actions/github-script@v7
@@ -62,7 +50,8 @@ jobs:
             const validateFailed = '${{ steps.validate.outputs.validate_failed }}' === 'true';
             
             const header = validateFailed ? '❌ 验证失败' : '✅ 验证通过';
-            const body = `### ${header}\n\n<details><summary>验证输出</summary>\n\n\`\`\`\n${validateOutput}\n\`\`\`\n\n</details>`;
+            const triggerType = '${{ github.event_name }}' === 'issue_comment' ? '(通过评论触发)' : '(自动触发)';
+            const body = `### ${header} ${triggerType}\n\n<details><summary>验证输出</summary>\n\n\`\`\`\n${validateOutput}\n\`\`\`\n\n</details>`;
             
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -80,7 +69,9 @@ jobs:
         id: copy
         run: |
           npm run cp
-          echo "PACKAGE_CONTENT=$(cat package.json)" >> $GITHUB_ENV
+          echo "PACKAGE_CONTENT<<EOF" >> $GITHUB_ENV
+          cat package.json >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
           
       - name: Comment package.json content
         if: success()
