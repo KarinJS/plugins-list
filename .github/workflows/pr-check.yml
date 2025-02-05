@@ -66,16 +66,14 @@ jobs:
         id: copy
         run: |
           npm run cp
-          echo "PACKAGE_CONTENT<<EOF" >> $GITHUB_ENV
-          cat package.json >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          echo "package_content=$(cat package.json | base64 -w 0)" >> $GITHUB_ENV
           
       - name: Comment package.json content
         if: success()
         uses: actions/github-script@v7
         with:
           script: |
-            const packageContent = process.env.PACKAGE_CONTENT;
+            const packageContent = Buffer.from(process.env.package_content, 'base64').toString('utf-8');
             
             const body = `### 📦 更新后的 package.json\n\n<details><summary>点击查看内容</summary>\n\n\`\`\`json\n${packageContent}\n\`\`\`\n\n</details>`;
             
