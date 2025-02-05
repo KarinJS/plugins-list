@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/KarinJS/plugins-list/compare/v1.1.1...v1.1.2) (2025-02-05)
+
+
+### Bug Fixes
+
+* **plugins:** 添加 karin-plugin-kkk 的 npm 包 ([e4ea345](https://github.com/KarinJS/plugins-list/commit/e4ea3456298fe0c06ef253164a7ea49495749ba2))
+* **plugins:** 添加 karin-plugin-ling 的 npm 包 ([#12](https://github.com/KarinJS/plugins-list/issues/12)) ([195fe30](https://github.com/KarinJS/plugins-list/commit/195fe30cf897ac0ae2a0ce1c6f4cb98e57145def))
+
 ## [1.1.1](https://github.com/KarinJS/plugins-list/compare/v1.1.0...v1.1.1) (2025-01-25)
 
 
