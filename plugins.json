@@ -52,6 +52,40 @@
           "branch": ""
         }
       ]
+    },
+    {
+      "name": "karin-plugin-ling",
+      "type": "npm",
+      "description": "希腊奶",
+      "home": "https://github.com/yusheng929/karin-plugin-ling",
+      "license": {
+
+        "name": "GPL-3.0",
+        "url": "https://github.com/yusheng929/karin-plugin-ling/blob/main/LICENSE"
+      },
+      "time": "2025-02-02 10:00:00",
+
+      "author": [
+        {
+          "name": "yusheng929",
+          "home": "https://github.com/yusheng929"
+        }
+
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/yusheng929/karin-plugin-ling",
+          "branch": "main"
+        },
+
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-ling",
+          "branch": ""
+        }
+
+      ]
     }
   ]
 }
