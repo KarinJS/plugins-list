@@ -1,0 +1,99 @@
+name: PR Check and Update
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  check-comment:
+    if: ${{ github.event_name == 'issue_comment' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR comment
+        id: check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment.body;
+            const isPR = !!context.payload.issue.pull_request;
+            
+            if (!isPR || !comment.includes('/check')) {
+              console.log('不是 PR 评论或不包含检查命令');
+              return;
+            }
+            
+            core.setOutput('should_run', 'true');
+
+  validate-and-update:
+    needs: check-comment
+    if: |
+      github.event_name == 'pull_request' || 
+      (github.event_name == 'issue_comment' && needs.check-comment.outputs.should_run == 'true')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run validation
+        id: validate
+        run: |
+          npm run validate > validate_output.txt 2>&1 || echo "::set-output name=validate_failed::true"
+          
+      - name: Comment validation result
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const validateOutput = fs.readFileSync('validate_output.txt', 'utf8');
+            const validateFailed = '${{ steps.validate.outputs.validate_failed }}' === 'true';
+            
+            const header = validateFailed ? '❌ 验证失败' : '✅ 验证通过';
+            const body = `### ${header}\n\n<details><summary>验证输出</summary>\n\n\`\`\`\n${validateOutput}\n\`\`\`\n\n</details>`;
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+            
+            if (validateFailed) {
+              process.exit(1);
+            }
+            
+      - name: Copy and update package.json
+        if: success()
+        id: copy
+        run: |
+          npm run cp
+          echo "PACKAGE_CONTENT=$(cat package.json)" >> $GITHUB_ENV
+          
+      - name: Comment package.json content
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const packageContent = process.env.PACKAGE_CONTENT;
+            
+            const body = `### 📦 更新后的 package.json\n\n<details><summary>点击查看内容</summary>\n\n\`\`\`json\n${packageContent}\n\`\`\`\n\n</details>`;
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            }); 
