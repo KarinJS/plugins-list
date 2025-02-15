@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/KarinJS/plugins-list/compare/v1.1.2...v1.1.3) (2025-02-15)
+
+
+### Bug Fixes
+
+* 新增 `karin-mys-core` ([#13](https://github.com/KarinJS/plugins-list/issues/13)) ([c63875b](https://github.com/KarinJS/plugins-list/commit/c63875bb71a7a50086ef3505703dd797cdff9b12))
+
 ## [1.1.2](https://github.com/KarinJS/plugins-list/compare/v1.1.1...v1.1.2) (2025-02-05)
 
 
