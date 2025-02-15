@@ -59,18 +59,15 @@
       "description": "希腊奶",
       "home": "https://github.com/yusheng929/karin-plugin-ling",
       "license": {
-
         "name": "GPL-3.0",
         "url": "https://github.com/yusheng929/karin-plugin-ling/blob/main/LICENSE"
       },
       "time": "2025-02-02 10:00:00",
-
       "author": [
         {
           "name": "yusheng929",
           "home": "https://github.com/yusheng929"
         }
-
       ],
       "repo": [
         {
@@ -78,13 +75,40 @@
           "url": "https://github.com/yusheng929/karin-plugin-ling",
           "branch": "main"
         },
-
         {
           "type": "npm",
           "url": "https://www.npmjs.com/package/karin-plugin-ling",
           "branch": ""
         }
-
+      ]
+    },
+    {
+      "name": "karin-mys-core",
+      "type": "npm",
+      "description": "前面的区域以后再来探索吧！",
+      "home": "https://github.com/Karin-Mys-Plugins/mys-core",
+      "license": {
+        "name": "GPL-3.0",
+        "url": "https://github.com/Karin-Mys-Plugins/mys-core/blob/main/LICENSE"
+      },
+      "time": "2025-02-16 11:45:14",
+      "author": [
+        {
+          "name": "babanbang",
+          "home": "https://github.com/babanbang"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/Karin-Mys-Plugins/mys-core",
+          "branch": "main"
+        },
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-mys-core",
+          "branch": ""
+        }
       ]
     }
   ]
