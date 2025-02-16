@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/KarinJS/plugins-list/compare/v1.1.3...v1.1.4) (2025-02-16)
+
+
+### Bug Fixes
+
+* 添加`kairn-plugin-mcmotd` ([#15](https://github.com/KarinJS/plugins-list/issues/15)) ([0818d95](https://github.com/KarinJS/plugins-list/commit/0818d950eca88c2a0138d70bfa337ff3a5de4134))
+
 ## [1.1.3](https://github.com/KarinJS/plugins-list/compare/v1.1.2...v1.1.3) (2025-02-15)
 
 
