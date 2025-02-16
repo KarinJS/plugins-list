@@ -1,115 +1,139 @@
 {
-  "plugins": [
-    {
-      "name": "@karinjs/plugin-basic",
-      "type": "npm",
-      "description": "karin plugin basic",
-      "home": "https://github.com/karinjs/karin-plugin-basic",
-      "license": {
-        "name": "MIT",
-        "url": "https://github.com/karinjs/karin-plugin-basic/blob/main/LICENSE"
-      },
-      "time": "2025-01-19 10:00:00",
-      "author": [
+    "plugins": [
         {
-          "name": "shijin",
-          "home": "https://github.com/sj817"
-        }
-      ],
-      "repo": [
-        {
-          "type": "github",
-          "url": "https://github.com/karinjs/karin-plugin-basic",
-          "branch": "main"
-        }
-      ]
-    },
-    {
-      "name": "karin-plugin-kkk",
-      "type": "npm",
-      "description": "咕咕咕 ~",
-      "home": "https://github.com/ikenxuan/karin-plugin-kkk",
-      "license": {
-        "name": "GPL-3.0",
-        "url": "https://github.com/ikenxuan/karin-plugin-kkk/blob/main/LICENSE"
-      },
-      "time": "2025-01-25 22:47:37",
-      "author": [
-        {
-          "name": "ikenxuan",
-          "home": "https://github.com/ikenxuan"
-        }
-      ],
-      "repo": [
-        {
-          "type": "github",
-          "url": "https://github.com/ikenxuan/karin-plugin-kkk",
-          "branch": "main"
+            "name": "@karinjs/plugin-basic",
+            "type": "npm",
+            "description": "karin plugin basic",
+            "home": "https://github.com/karinjs/karin-plugin-basic",
+            "license": {
+                "name": "MIT",
+                "url": "https://github.com/karinjs/karin-plugin-basic/blob/main/LICENSE"
+            },
+            "time": "2025-01-19 10:00:00",
+            "author": [
+                {
+                    "name": "shijin",
+                    "home": "https://github.com/sj817"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/karinjs/karin-plugin-basic",
+                    "branch": "main"
+                }
+            ]
         },
         {
-          "type": "npm",
-          "url": "https://www.npmjs.com/package/karin-plugin-kkk",
-          "branch": ""
-        }
-      ]
-    },
-    {
-      "name": "karin-plugin-ling",
-      "type": "npm",
-      "description": "希腊奶",
-      "home": "https://github.com/yusheng929/karin-plugin-ling",
-      "license": {
-        "name": "GPL-3.0",
-        "url": "https://github.com/yusheng929/karin-plugin-ling/blob/main/LICENSE"
-      },
-      "time": "2025-02-02 10:00:00",
-      "author": [
-        {
-          "name": "yusheng929",
-          "home": "https://github.com/yusheng929"
-        }
-      ],
-      "repo": [
-        {
-          "type": "github",
-          "url": "https://github.com/yusheng929/karin-plugin-ling",
-          "branch": "main"
+            "name": "karin-plugin-kkk",
+            "type": "npm",
+            "description": "咕咕咕 ~",
+            "home": "https://github.com/ikenxuan/karin-plugin-kkk",
+            "license": {
+                "name": "GPL-3.0",
+                "url": "https://github.com/ikenxuan/karin-plugin-kkk/blob/main/LICENSE"
+            },
+            "time": "2025-01-25 22:47:37",
+            "author": [
+                {
+                    "name": "ikenxuan",
+                    "home": "https://github.com/ikenxuan"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/ikenxuan/karin-plugin-kkk",
+                    "branch": "main"
+                },
+                {
+                    "type": "npm",
+                    "url": "https://www.npmjs.com/package/karin-plugin-kkk",
+                    "branch": ""
+                }
+            ]
         },
         {
-          "type": "npm",
-          "url": "https://www.npmjs.com/package/karin-plugin-ling",
-          "branch": ""
-        }
-      ]
-    },
-    {
-      "name": "karin-mys-core",
-      "type": "npm",
-      "description": "前面的区域以后再来探索吧！",
-      "home": "https://github.com/Karin-Mys-Plugins/mys-core",
-      "license": {
-        "name": "GPL-3.0",
-        "url": "https://github.com/Karin-Mys-Plugins/mys-core/blob/main/LICENSE"
-      },
-      "time": "2025-02-16 11:45:14",
-      "author": [
-        {
-          "name": "babanbang",
-          "home": "https://github.com/babanbang"
-        }
-      ],
-      "repo": [
-        {
-          "type": "github",
-          "url": "https://github.com/Karin-Mys-Plugins/mys-core",
-          "branch": "main"
+            "name": "karin-plugin-ling",
+            "type": "npm",
+            "description": "希腊奶",
+            "home": "https://github.com/yusheng929/karin-plugin-ling",
+            "license": {
+                "name": "GPL-3.0",
+                "url": "https://github.com/yusheng929/karin-plugin-ling/blob/main/LICENSE"
+            },
+            "time": "2025-02-02 10:00:00",
+            "author": [
+                {
+                    "name": "yusheng929",
+                    "home": "https://github.com/yusheng929"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/yusheng929/karin-plugin-ling",
+                    "branch": "main"
+                },
+                {
+                    "type": "npm",
+                    "url": "https://www.npmjs.com/package/karin-plugin-ling",
+                    "branch": ""
+                }
+            ]
         },
         {
-          "type": "npm",
-          "url": "https://www.npmjs.com/package/karin-mys-core",
-          "branch": ""
+            "name": "karin-mys-core",
+            "type": "npm",
+            "description": "前面的区域以后再来探索吧！",
+            "home": "https://github.com/Karin-Mys-Plugins/mys-core",
+            "license": {
+                "name": "GPL-3.0",
+                "url": "https://github.com/Karin-Mys-Plugins/mys-core/blob/main/LICENSE"
+            },
+            "time": "2025-02-16 11:45:14",
+            "author": [
+                {
+                    "name": "babanbang",
+                    "home": "https://github.com/babanbang"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/Karin-Mys-Plugins/mys-core",
+                    "branch": "main"
+                },
+                {
+                    "type": "npm",
+                    "url": "https://www.npmjs.com/package/karin-mys-core",
+                    "branch": ""
+                }
+            ]
+        },
+        {
+            "name": "karin-plugin-mcmotd",
+            "type": "app",
+            "description": "Minecraft 服务器状态获取",
+            "home": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/js/MCMotd.js",
+            "license": {
+                "name": "MIT",
+                "url": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/LICENSE"
+            },
+            "time": "2025-02-16 11:45:14",
+            "author": [
+                {
+                    "name": "Aliorpse",
+                    "home": "https://github.com/Aliorpse"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/Aliorpse/karin-plugins-alijs",
+                    "branch": "main"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
