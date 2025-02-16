@@ -115,7 +115,7 @@
             "name": "karin-plugin-mcmotd",
             "type": "app",
             "description": "Minecraft 服务器状态获取",
-            "home": "https://github.com/Aliorpse/karin-plugins-alijs",
+            "home": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/js/MCMotd.js",
             "license": {
                 "name": "MIT",
                 "url": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/LICENSE"
@@ -123,8 +123,8 @@
             "time": "2025-02-16 11:45:14",
             "author": [
                 {
-                    "name": "babanbang",
-                    "home": "https://github.com/babanbang"
+                    "name": "Aliorpse",
+                    "home": "https://github.com/Aliorpse"
                 }
             ],
             "repo": [
