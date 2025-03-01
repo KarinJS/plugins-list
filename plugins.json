@@ -112,7 +112,7 @@
             ]
         },
         {
-            "name": "karin-plugin-mcmotd",
+            "name": "karin-plugin-MCMotd",
             "type": "app",
             "description": "Minecraft 服务器状态获取",
             "home": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/js/MCMotd.js",
@@ -121,6 +121,54 @@
                 "url": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/LICENSE"
             },
             "time": "2025-02-16 11:45:14",
+            "author": [
+                {
+                    "name": "Aliorpse",
+                    "home": "https://github.com/Aliorpse"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/Aliorpse/karin-plugins-alijs",
+                    "branch": "main"
+                }
+            ]
+        },
+        {
+            "name": "karin-plugin-BiliParser",
+            "type": "app",
+            "description": "B站链接解析",
+            "home": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/js/BiliParser.js",
+            "license": {
+                "name": "MIT",
+                "url": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/LICENSE"
+            },
+            "time": "2025-03-01 11:45:14",
+            "author": [
+                {
+                    "name": "Aliorpse",
+                    "home": "https://github.com/Aliorpse"
+                }
+            ],
+            "repo": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/Aliorpse/karin-plugins-alijs",
+                    "branch": "main"
+                }
+            ]
+        },
+        {
+            "name": "karin-plugin-RunCMD",
+            "type": "app",
+            "description": "快捷执行指令",
+            "home": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/js/RunCMD.js",
+            "license": {
+                "name": "MIT",
+                "url": "https://github.com/Aliorpse/karin-plugins-alijs/blob/main/LICENSE"
+            },
+            "time": "2025-03-01 11:45:14",
             "author": [
                 {
                     "name": "Aliorpse",
