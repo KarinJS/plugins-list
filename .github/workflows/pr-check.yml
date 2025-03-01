@@ -43,7 +43,9 @@ jobs:
         id: copy
         run: |
           npm run cp
-          echo "package_content=$(cat package.json | base64 -w 0)" >> $GITHUB_ENV
+          sleep 1
+          cat package.json > temp.json
+          echo "package_content=$(cat temp.json | base64 -w 0)" >> $GITHUB_ENV
           
       - name: Comment results
         uses: actions/github-script@v7
