@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/KarinJS/plugins-list/compare/v1.1.3...v1.2.0) (2025-03-01)
+
+
+### Features
+
+* 添加插件*2 ([#18](https://github.com/KarinJS/plugins-list/issues/18)) ([f55ed12](https://github.com/KarinJS/plugins-list/commit/f55ed12755e954962adee029ebb59946b21784ea))
+* 添加新插件karin-plugin-teamspeak ([#17](https://github.com/KarinJS/plugins-list/issues/17)) ([9ee5b5a](https://github.com/KarinJS/plugins-list/commit/9ee5b5ae156c84e46d5f1ff1a3c71498be292375))
+
+
+### Bug Fixes
+
+* 添加`kairn-plugin-mcmotd` ([#15](https://github.com/KarinJS/plugins-list/issues/15)) ([0818d95](https://github.com/KarinJS/plugins-list/commit/0818d950eca88c2a0138d70bfa337ff3a5de4134))
+
 ## [1.1.3](https://github.com/KarinJS/plugins-list/compare/v1.1.2...v1.1.3) (2025-02-15)
 
 
