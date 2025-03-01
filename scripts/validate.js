@@ -64,7 +64,7 @@ const validateBaseFields = (plugin) => {
     throw new Error(`插件 ${plugin.name} 的仓库信息格式不正确`)
   }
 
-  const type = ['github', 'gitee', 'gitcode', 'gitlab', 'npm']
+  const type = ['git', 'npm', 'app']
   if (!type.includes(plugin.type)) {
     throw new Error(`插件 ${plugin.name} 的类型 ${plugin.type} 无效`)
   }
@@ -141,10 +141,13 @@ const validateNpmPackage = async (name) => {
  */
 const validatePackageJson = async (plugin, repo) => {
   try {
+    if (plugin.type === 'app') {
+      return // app 类型不需要验证 package.json
+    }
     if (repo.type === 'npm') {
-      if (repo.branch !== '') {
-        throw new Error(`插件 ${plugin.name} 的 npm 仓库不应该设置 branch 字段`)
-      }
+      // if (repo.branch !== '') {
+      //   throw new Error(`插件 ${plugin.name} 的 npm 仓库不应该设置 branch 字段`)
+      // }
       return // npm 类型不需要验证 package.json
     }
 
@@ -199,9 +202,12 @@ const validateAppPlugin = (plugin) => {
     throw new Error(`App 类型插件 ${plugin.name} 缺少 files 数组`)
   }
 
-  for (const fileUrl of plugin.files) {
-    if (!isValidUrl(fileUrl)) {
-      throw new Error(`App 类型插件 ${plugin.name} 的文件URL无效: ${fileUrl}`)
+  for (const file of plugin.files) {
+    if (!file.name) {
+      throw new Error(`App 类型插件 ${plugin.name} 的文件缺少 name 字段`)
+    }
+    if (!isValidUrl(file.url)) {
+      throw new Error(`App 类型插件 ${plugin.name} 的文件URL无效: ${file.url}`)
     }
   }
 }

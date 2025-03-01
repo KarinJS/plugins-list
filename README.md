@@ -105,6 +105,7 @@
       "name": "karin-plugin-basic",
       "type": "npm",
       "description": "karin plugin basic",
+      "home": "https://github.com/karinjs/karin-plugin-basic",
       "license": {
         "name": "MIT",
         "url": "https://github.com/karinjs/karin-plugin-basic/blob/main/LICENSE"
@@ -133,6 +134,7 @@
       "name": "karin-plugin-git-example",
       "type": "git",
       "description": "这是一个 Git 插件示例",
+      "home": "https://github.com/username/karin-plugin-git-example",
       "license": {
         "name": "MIT",
         "url": "https://github.com/username/karin-plugin-git-example/blob/main/LICENSE"
@@ -161,6 +163,7 @@
       "name": "karin-plugin-app-example",
       "type": "app",
       "description": "这是一个 App 插件示例",
+      "home": "https://github.com/username/karin-plugin-app-example",
       "license": {
         "name": "GPL-3.0",
         "url": "https://github.com/username/karin-plugin-app-example/blob/main/LICENSE"
@@ -179,9 +182,11 @@
           "branch": "main"
         }
       ],
-      "files": [
-        "https://example.com/download/plugin-v1.0.0.js",
-        "https://mirror.example.com/download/plugin-v1.0.0.js"
+      "files": [ // 这里可以添加多个文件
+        {
+          "name": "karin-plugin-app-example.js",
+          "url": "https://mirror.example.com/download/karin-plugin-app-example.js"
+        }
       ]
     }
   ]
