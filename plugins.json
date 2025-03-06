@@ -177,6 +177,35 @@
           "branch": "build"
         }
       ]
+    },
+    {
+      "name": "karin-plugin-mc-rcon",
+      "type": "npm",
+      "description": "有关mc服务器相关功能。",
+      "home": "https://github.com/jacksixth/karin-plugin-mc-rcon",
+      "license": {
+        "name": "GPL-3.0",
+        "url": "https://github.com/jacksixth/karin-plugin-mc-rcon/blob/main/LICENSE"
+      },
+      "time": "2025-03-05 22:00:00",
+      "author": [
+        {
+          "name": "jacksixth",
+          "home": "https://github.com/jacksixth"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-mc-rcon",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/jacksixth/karin-plugin-mc-rcon",
+          "branch": "build"
+        }
+      ]
     }
   ]
 }
