@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/KarinJS/plugins-list/compare/v1.2.0...v1.3.0) (2025-03-14)
+
+
+### Features
+
+* karin-plugin-mc-rcon ([#19](https://github.com/KarinJS/plugins-list/issues/19)) ([d3136b6](https://github.com/KarinJS/plugins-list/commit/d3136b6929b5a7600ae683a11b0a758e5f8ae3f7))
+
 ## [1.2.0](https://github.com/KarinJS/plugins-list/compare/v1.1.3...v1.2.0) (2025-03-01)
 
 
