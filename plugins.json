@@ -254,6 +254,30 @@
           "branch": "main"
         }
       ]
+    },
+    {
+      "name": "@karinjs/adapter-icqq",
+      "type": "npm",
+      "description": "karin plugin icqq",
+      "home": "https://github.com/KarinJS/karin-plugin-adapter-icqq",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/KarinJS/karin-plugin-adapter-icqq/blob/main/LICENSE"
+      },
+      "time": "2025-01-19 10:00:00",
+      "author": [
+        {
+          "name": "shijin",
+          "home": "https://github.com/sj817"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/KarinJS/karin-plugin-adapter-icqq",
+          "branch": "main"
+        }
+      ]
     }
   ]
 }
