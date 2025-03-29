@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "@karinjs/puppeteer",
+      "name": "@karinjs/plugin-puppeteer",
       "type": "npm",
       "description": "karin plugin puppeteer",
       "home": "https://github.com/karinjs/puppeteer",
