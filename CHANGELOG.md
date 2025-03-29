@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/KarinJS/plugins-list/compare/v1.3.0...v1.4.0) (2025-03-29)
+
+
+### Features
+
+* 添加新插件@karinjs/puppeteer和karin-plugin-yenai ([#21](https://github.com/KarinJS/plugins-list/issues/21)) ([52f49ea](https://github.com/KarinJS/plugins-list/commit/52f49ea2bae73395755f3a293e1dd26574522fa5))
+
+
+### Bug Fixes
+
+* 修正插件名称为@karinjs/plugin-puppeteer ([#24](https://github.com/KarinJS/plugins-list/issues/24)) ([4e3bdfd](https://github.com/KarinJS/plugins-list/commit/4e3bdfd68b9dd640acf3f3cbb5b9643e8199dc64))
+
 ## [1.3.0](https://github.com/KarinJS/plugins-list/compare/v1.2.0...v1.3.0) (2025-03-14)
 
 
