@@ -6,6 +6,12 @@
   "license": "MIT",
   "author": "",
   "type": "module",
+  "exports": {
+    ".": "./types.ts"
+  },
+  "files": [
+    "types.ts"
+  ],
   "scripts": {
     "cp": "node scripts/cp.js",
     "validate": "node scripts/validate.js",
