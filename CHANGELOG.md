@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/KarinJS/plugins-list/compare/v1.4.0...v1.4.1) (2025-03-30)
+
+
+### Bug Fixes
+
+* 导出类型 ([63def79](https://github.com/KarinJS/plugins-list/commit/63def798c81e62034423d2914b0157f1a3228b8e))
+
 ## [1.4.0](https://github.com/KarinJS/plugins-list/compare/v1.3.0...v1.4.0) (2025-03-29)
 
 
