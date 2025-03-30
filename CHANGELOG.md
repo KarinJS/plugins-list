@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/KarinJS/plugins-list/compare/v1.4.1...v1.5.0) (2025-03-30)
+
+
+### Features
+
+* 更新插件描述信息 ([0eddb64](https://github.com/KarinJS/plugins-list/commit/0eddb644ba7c871da9b7c81056caaaf3c29f6df2))
+
 ## [1.4.1](https://github.com/KarinJS/plugins-list/compare/v1.4.0...v1.4.1) (2025-03-30)
 
 
