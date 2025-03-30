@@ -161,14 +161,17 @@
       "files": [
         {
           "name": "B站链接解析",
+          "description": "解析B站链接，获取视频信息。",
           "url": "https://raw.githubusercontent.com/Aliorpse/karin-plugins-alijs/refs/heads/main/js/BiliParser.js"
         },
         {
           "name": "Minecraft 服务器状态获取",
+          "description": "获取Minecraft服务器状态。",
           "url": "https://raw.githubusercontent.com/Aliorpse/karin-plugins-alijs/refs/heads/main/js/MCMotd.js"
         },
         {
           "name": "快捷执行指令",
+          "description": "快捷执行指令。",
           "url": "https://raw.githubusercontent.com/Aliorpse/karin-plugins-alijs/refs/heads/main/js/RunCMD.js"
         }
       ]

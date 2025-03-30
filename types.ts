@@ -1,7 +1,7 @@
 /**
  * 基类
  */
-export interface Base {
+ interface Base {
   /** 插件包名 */
   name: string
   /**
@@ -45,22 +45,34 @@ export interface Base {
 /**
  * npm 插件类型
  */
-export interface Npm extends Base {
+ interface Npm extends Base {
   type: 'npm'
 }
 
 /**
  * git 插件类型
  */
-export interface Git extends Base {
+ interface Git extends Base {
   type: 'git'
 }
 
 /**
  * 单应用插件类型
  */
-export interface App extends Base {
+ interface App extends Base {
   type: 'app'
   /** app文件直链 */
-  files: string[]
+  files: {
+    /** app插件名称 */
+    name: string
+    /** 文件直链 */
+    url: string
+    /** 描述 */
+    description?: string
+  }[]
 }
+
+/**
+ * 插件市场类型每个插件的类型
+ */
+export type MarketType = Npm | Git | App
