@@ -281,6 +281,64 @@
           "branch": "main"
         }
       ]
+    },
+    {
+      "name": "karin-plugin-chaite",
+      "type": "npm",
+      "description": "karin plugin chaite, 多功能ai插件",
+      "home": "https://github.com/ikechan8370/karin-plugin-chaite",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/ikechan8370/karin-plugin-chaite/blob/main/LICENSE"
+      },
+      "time": "2025-04-29 14:33:00",
+      "author": [
+        {
+          "name": "ikechan8370",
+          "home": "https://github.com/ikechan8370"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-chaite",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ikechan8370/karin-plugin-chaite",
+          "branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "karin-plugin-orchid",
+      "type": "npm",
+      "description": "karin plugin orchid, 兰插件，娱乐功能和rss推送等",
+      "home": "https://github.com/ikechan8370/karin-plugin-orchid",
+      "license": {
+        "name": "GPL-3.0",
+        "url": "https://github.com/ikechan8370/karin-plugin-orchid/blob/main/LICENSE"
+      },
+      "time": "2025-04-29 14:33:00",
+      "author": [
+        {
+          "name": "ikechan8370",
+          "home": "https://github.com/ikechan8370"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-orchid",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ikechan8370/karin-plugin-orchid",
+          "branch": "main"
+        }
+      ]
     }
   ]
 }
