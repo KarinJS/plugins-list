@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/KarinJS/plugins-list/compare/v1.5.0...v1.6.0) (2025-04-29)
+
+
+### Features
+
+* karin-plugin-orchid and karin-plugin-chaite  ([#27](https://github.com/KarinJS/plugins-list/issues/27)) ([c90cc53](https://github.com/KarinJS/plugins-list/commit/c90cc5325d1b5e6251af308c5ab55c8ee4f92668))
+
 ## [1.5.0](https://github.com/KarinJS/plugins-list/compare/v1.4.1...v1.5.0) (2025-03-30)
 
 
