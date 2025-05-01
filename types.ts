@@ -1,7 +1,7 @@
 /**
- * 基类
+ * 插件基础类型
  */
- interface Base {
+export interface KarinPluginBase {
   /** 插件包名 */
   name: string
   /**
@@ -30,6 +30,8 @@
     name: string
     /** 主页 */
     home: string
+    /** 头像 仅支持url 如果是github、gitee无需填写 */
+    avatar?: string
   }[]
   /** 插件仓库 */
   repo: {
@@ -45,21 +47,21 @@
 /**
  * npm 插件类型
  */
- interface Npm extends Base {
+export interface KarinNpmPlugin extends KarinPluginBase {
   type: 'npm'
 }
 
 /**
  * git 插件类型
  */
- interface Git extends Base {
+export interface KarinGitPlugin extends KarinPluginBase {
   type: 'git'
 }
 
 /**
  * 单应用插件类型
  */
- interface App extends Base {
+export interface KarinAppPlugin extends KarinPluginBase {
   type: 'app'
   /** app文件直链 */
   files: {
@@ -75,4 +77,4 @@
 /**
  * 插件市场类型每个插件的类型
  */
-export type MarketType = Npm | Git | App
+export type KarinPluginType = KarinNpmPlugin | KarinGitPlugin | KarinAppPlugin
