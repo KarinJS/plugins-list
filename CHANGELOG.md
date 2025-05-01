@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/KarinJS/plugins-list/compare/v1.6.0...v1.6.1) (2025-05-01)
+
+
+### Bug Fixes
+
+* 更正部分类型 ([6703c8d](https://github.com/KarinJS/plugins-list/commit/6703c8d539ffee70c2e250940451759536d3f4e5))
+
 ## [1.6.0](https://github.com/KarinJS/plugins-list/compare/v1.5.0...v1.6.0) (2025-04-29)
 
 
