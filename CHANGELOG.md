@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/KarinJS/plugins-list/compare/v1.6.1...v1.6.2) (2025-05-04)
+
+
+### Bug Fixes
+
+* Update karin-plugin-kkk ([15d23ee](https://github.com/KarinJS/plugins-list/commit/15d23ee8f9bc3d8481d55a5dd10f44cc96353c28))
+
 ## [1.6.1](https://github.com/KarinJS/plugins-list/compare/v1.6.0...v1.6.1) (2025-05-01)
 
 
