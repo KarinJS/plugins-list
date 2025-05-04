@@ -51,7 +51,7 @@
     {
       "name": "karin-plugin-kkk",
       "type": "npm",
-      "description": "咕咕咕 ~",
+      "description": "Karin 的「抖音」「B 站」视频解析/动态推送插件",
       "home": "https://github.com/ikenxuan/karin-plugin-kkk",
       "license": {
         "name": "GPL-3.0",
