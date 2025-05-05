@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/KarinJS/plugins-list/compare/v1.6.2...v1.7.0) (2025-05-05)
+
+
+### Features
+
+* 添加可选参数 allowBuild 以支持 pnpm 安装期间执行脚本的包名列表 ([ad864e6](https://github.com/KarinJS/plugins-list/commit/ad864e6cf2a06c35b8238b29f897f8e3ecd7baf6))
+
 ## [1.6.2](https://github.com/KarinJS/plugins-list/compare/v1.6.1...v1.6.2) (2025-05-04)
 
 
