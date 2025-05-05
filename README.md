@@ -78,6 +78,8 @@
 
 1. **NPM 插件** (`type: "npm"`)
    - 通过 npm 包方式发布的插件
+   - 可选参数：
+     - `allowBuild`: 字符串数组，指定允许pnpm在安装期间执行脚本的包名列表，可不填写
 
 2. **Git 插件** (`type: "git"`)
    - 通过 git 仓库方式发布的插件
@@ -128,7 +130,8 @@
           "url": "https://www.npmjs.com/package/karin-plugin-basic",
           "branch": ""
         }
-      ]
+      ],
+      "allowBuild": ["esbuild", "sqlite3"]
     },
     {
       "name": "karin-plugin-git-example",

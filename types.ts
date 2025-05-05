@@ -49,6 +49,8 @@ export interface KarinPluginBase {
  */
 export interface KarinNpmPlugin extends KarinPluginBase {
   type: 'npm'
+  /** 允许pnpm在安装期间执行脚本的包名列表 */
+  allowBuild?: string[]
 }
 
 /**
