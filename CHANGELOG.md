@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/KarinJS/plugins-list/compare/v1.7.0...v1.8.0) (2025-05-10)
+
+
+### Features
+
+* **plugins:** 添加 Karin 版表情包合成插件 ([#32](https://github.com/KarinJS/plugins-list/issues/32)) ([5f3f1dd](https://github.com/KarinJS/plugins-list/commit/5f3f1dd33d4a5a66d6356d91ed8978bc78bc26f2))
+
 ## [1.7.0](https://github.com/KarinJS/plugins-list/compare/v1.6.2...v1.7.0) (2025-05-05)
 
 
