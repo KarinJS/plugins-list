@@ -341,7 +341,7 @@
       ]
     },
     {
-      "name": "karin-plugin-meme",
+      "name": "@candriajs/karin-plugin-meme",
       "type": "npm",
       "description": "一个Karin版的表情包合成插件",
       "home": "https://github.com/CandriaJS/karin-plugin-meme",
