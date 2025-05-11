@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/KarinJS/plugins-list/compare/v1.8.0...v1.9.0) (2025-05-11)
+
+
+### Features
+
+* `karin-plugin-picture-game` ([#34](https://github.com/KarinJS/plugins-list/issues/34)) ([b08817f](https://github.com/KarinJS/plugins-list/commit/b08817f761354c15ba0abfec8787ddd2a2a9384a))
+
 ## [1.8.0](https://github.com/KarinJS/plugins-list/compare/v1.7.0...v1.8.0) (2025-05-10)
 
 
