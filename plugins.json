@@ -80,7 +80,7 @@
     {
       "name": "karin-plugin-ling",
       "type": "npm",
-      "description": "希腊奶",
+      "description": "提供多种功能",
       "home": "https://github.com/yusheng929/karin-plugin-ling",
       "license": {
         "name": "GPL-3.0",
