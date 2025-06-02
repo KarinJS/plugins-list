@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.0](https://github.com/KarinJS/plugins-list/compare/v1.10.0...v1.11.0) (2025-06-02)
+
+
+### Features
+
+* **plugins:** 添加 @candriajs/karin-plugin-emojimix 插件 ([8ae4b67](https://github.com/KarinJS/plugins-list/commit/8ae4b674b339fe99be66caf2b59ee89cce8a70a9))
+* **plugins:** 添加 @candriajs/karin-plugin-emojimix 插件 ([4b49a3e](https://github.com/KarinJS/plugins-list/commit/4b49a3e098340030789f601a8eb657e2f3b0ce14))
+
 ## [1.10.0](https://github.com/KarinJS/plugins-list/compare/v1.9.1...v1.10.0) (2025-05-21)
 
 
