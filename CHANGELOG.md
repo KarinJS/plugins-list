@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/KarinJS/plugins-list/compare/v1.11.0...v1.12.0) (2025-06-08)
+
+
+### Features
+
+* **plugins:** 添加 Karin 图片操作插件 ([#41](https://github.com/KarinJS/plugins-list/issues/41)) ([deaab1c](https://github.com/KarinJS/plugins-list/commit/deaab1c6482109b5a52cc1acef589d664963908d))
+
 ## [1.11.0](https://github.com/KarinJS/plugins-list/compare/v1.10.0...v1.11.0) (2025-06-02)
 
 
