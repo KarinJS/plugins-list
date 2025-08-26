@@ -343,13 +343,46 @@
     {
       "name": "@candriajs/karin-plugin-meme",
       "type": "npm",
-      "description": "一个Karin版的表情包合成插件",
+      "description": "一个Karin版的表情包合成插件, 本地版",
       "home": "https://github.com/CandriaJS/karin-plugin-meme",
       "license": {
         "name": "GNU General Public License v3.0",
         "url": "https://github.com/CandriaJS/karin-plugin-meme/blob/main/LICENSE"
       },
       "time": "2025-05-10 19:20:00",
+      "author": [
+        {
+          "name": "CandriaJS",
+          "home": "https://github.com/CandriaJS"
+        },
+        {
+          "name": "shiwuliya",
+          "home": "https://github.com/shiwuliya"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/@candriajs/karin-plugin-meme",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/CandriaJS/karin-plugin-meme",
+          "branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "@candriajs/karin-plugin-meme-api",
+      "type": "npm",
+      "description": "一个Karin版的表情包合成插件, api版",
+      "home": "https://github.com/CandriaJS/karin-plugin-meme",
+      "license": {
+        "name": "GNU General Public License v3.0",
+        "url": "https://github.com/CandriaJS/karin-plugin-meme/blob/main/LICENSE"
+      },
+      "time": "2025-08-26 20:30:00",
       "author": [
         {
           "name": "CandriaJS",
