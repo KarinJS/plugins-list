@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.0](https://github.com/KarinJS/plugins-list/compare/v1.12.0...v1.13.0) (2025-08-26)
+
+
+### Features
+
+* **plugin:** 添加 @candriajs/karin-plugin-meme-api 插件 ([77f42e4](https://github.com/KarinJS/plugins-list/commit/77f42e4852dba3cd4b220e99ebdfb1036a9580c4))
+* **plugin:** 添加 @candriajs/karin-plugin-meme-api 插件 ([c9b9d1a](https://github.com/KarinJS/plugins-list/commit/c9b9d1a6b750c7176c10077f706be018a674d55c))
+
 ## [1.12.0](https://github.com/KarinJS/plugins-list/compare/v1.11.0...v1.12.0) (2025-06-08)
 
 
