@@ -529,6 +529,35 @@
           "branch": "main"
         }
       ]
+    },
+    {
+      "name": "karin-plugin-gamepush",
+      "type": "npm",
+      "description": "自动监控游戏版本更新并推送通知, 支持原神、崩坏3、崩坏星穹铁道、绝区零、鸣朝",
+      "home": "https://github.com/rainbowwarmth/karin-plugin-gamepush",
+      "license": {
+        "name": "MIT License",
+        "url": "https://github.com/rainbowwarmth/karin-plugin-gamepush/blob/main/LICENSE"
+      },
+      "time": "2025-09-20 19:22:00",
+      "author": [
+        {
+          "name": "rainbowwarmth",
+          "home": "https://github.com/rainbowwarmth"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-gamepush",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/rainbowwarmth/karin-plugin-gamepush",
+          "branch": "main"
+        }
+      ]
     }
   ]
 }
