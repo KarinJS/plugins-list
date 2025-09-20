@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/KarinJS/plugins-list/compare/v1.13.0...v1.14.0) (2025-09-20)
+
+
+### Features
+
+* **plugins:** 添加 Karin 版游戏版本更新推送插件 ([#45](https://github.com/KarinJS/plugins-list/issues/45)) ([48d5592](https://github.com/KarinJS/plugins-list/commit/48d55926236f39bcfff38e4b2c05699e45bb61e7))
+
 ## [1.13.0](https://github.com/KarinJS/plugins-list/compare/v1.12.0...v1.13.0) (2025-08-26)
 
 
