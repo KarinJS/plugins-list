@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.1](https://github.com/KarinJS/plugins-list/compare/v1.14.0...v1.14.1) (2025-09-24)
+
+
+### Bug Fixes
+
+* 删除已不存在的插件 ([17b76c5](https://github.com/KarinJS/plugins-list/commit/17b76c59cb5766a11243d07853e51132f92a10ba))
+
 ## [1.14.0](https://github.com/KarinJS/plugins-list/compare/v1.13.0...v1.14.0) (2025-09-20)
 
 
