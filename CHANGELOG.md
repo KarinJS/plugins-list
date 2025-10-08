@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/KarinJS/plugins-list/compare/v1.14.1...v1.15.0) (2025-10-08)
+
+
+### Features
+
+* **plugins:** 添加 karin-plugin-yysls 插件 ([#48](https://github.com/KarinJS/plugins-list/issues/48)) ([99c3c55](https://github.com/KarinJS/plugins-list/commit/99c3c55f43058e14cd8b031ae400ca7900f172e2))
+
 ## [1.14.1](https://github.com/KarinJS/plugins-list/compare/v1.14.0...v1.14.1) (2025-09-24)
 
 
