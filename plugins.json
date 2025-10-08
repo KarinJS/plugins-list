@@ -542,7 +542,7 @@
       "time": "2025-10-7 11:45:14",
       "author": [
         {
-          "name": "babanbang/karin-plugin-yysls",
+          "name": "babanbang",
           "home": "https://github.com/babanbang"
         }
       ],
@@ -558,6 +558,6 @@
           "branch": ""
         }
       ]
-    },
+    }
   ]
 }
