@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/KarinJS/plugins-list/compare/v1.15.0...v1.16.0) (2025-10-31)
+
+
+### Features
+
+* 新增ffmpeg插件 ([1b16768](https://github.com/KarinJS/plugins-list/commit/1b16768aafa7772fcea0e8502e540f30b40fceae))
+
 ## [1.15.0](https://github.com/KarinJS/plugins-list/compare/v1.14.1...v1.15.0) (2025-10-08)
 
 
