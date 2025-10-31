@@ -49,6 +49,30 @@
       ]
     },
     {
+      "name": "@karinjs/plugin-ffmpeg",
+      "type": "npm",
+      "description": "为 Karin 提供开箱即用的 FFmpeg,免去给系统安装 FFmpeg 的繁琐步骤",
+      "home": "https://github.com/KarinJS/karin-plugin-ffmpeg",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/KarinJS/karin-plugin-ffmpeg/blob/main/LICENSE"
+      },
+      "time": "2025-10-31 19:12:00",
+      "author": [
+        {
+          "name": "Karin",
+          "home": "https://github.com/KarinJS"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/KarinJS/karin-plugin-ffmpeg",
+          "branch": "main"
+        }
+      ]
+    },
+    {
       "name": "karin-plugin-kkk",
       "type": "npm",
       "description": "Karin 的「抖音」「B 站」视频解析/动态推送插件",
