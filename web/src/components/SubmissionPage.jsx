@@ -142,9 +142,12 @@ const SubmissionPage = ({ accessToken, user, onLogout }) => {
         }
 
         // Check if it's a single JS file (app type)
-        // For now, we'll check if the package type is determined by file structure
-        // This is a simplified check - you might need to adjust based on your needs
-        const isAppType = !repo.packageJson.main && !repo.packageJson.module;
+        // More robust detection: check for main/module/exports and package type
+        const isAppType = !packageName.startsWith('@') && // Not scoped package
+                         !repo.packageJson.main && 
+                         !repo.packageJson.module && 
+                         !repo.packageJson.exports &&
+                         repo.packageJson.type !== 'module';
         
         if (!isAppType) {
           // Check npm package exists
@@ -243,7 +246,7 @@ const SubmissionPage = ({ accessToken, user, onLogout }) => {
                     <input
                       type="checkbox"
                       checked={isSelected}
-                      onChange={() => {}}
+                      readOnly
                       className="repo-checkbox"
                     />
                     <div className="repo-info">

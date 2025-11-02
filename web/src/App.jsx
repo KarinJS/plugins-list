@@ -27,19 +27,13 @@ function App() {
     if (code) {
       // In a production app, you would exchange this code for an access token
       // using a backend service (can't expose client secret in frontend)
-      // For demo purposes, we'll simulate this with a note
+      // For demo purposes, we'll redirect to the token setup page
       console.log('OAuth code received:', code);
-      alert(
-        '注意：在生产环境中，需要配置后端服务来处理 OAuth 回调。\n' +
-        '当前为演示模式，请使用个人访问令牌进行测试。\n\n' +
-        '获取个人访问令牌：\n' +
-        '1. 访问 https://github.com/settings/tokens\n' +
-        '2. 生成新令牌（需要 repo 和 read:user 权限）\n' +
-        '3. 在控制台输入：localStorage.setItem("github_token", "YOUR_TOKEN")\n' +
-        '4. 刷新页面'
-      );
-      // Clean up URL
+      
+      // Clean up URL and redirect to token setup
       window.history.replaceState({}, document.title, window.location.pathname);
+      window.location.href = './token-setup.html';
+      return;
     }
 
     setLoading(false);
