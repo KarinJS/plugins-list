@@ -17,8 +17,8 @@ const SubmissionPage = ({ accessToken, user, onLogout }) => {
         const data = await response.json();
         const pluginNames = new Set(data.plugins.map(p => p.name));
         setExistingPlugins(pluginNames);
-      } catch (error) {
-        console.error('Failed to load existing plugins:', error);
+      } catch (err) {
+        console.error('Failed to load existing plugins:', err);
       }
     };
     loadExistingPlugins();
@@ -64,7 +64,7 @@ const SubmissionPage = ({ accessToken, user, onLogout }) => {
                   packageJson: content,
                 };
               }
-            } catch (error) {
+            } catch {
               // Repository doesn't have package.json or error occurred
             }
             return null;

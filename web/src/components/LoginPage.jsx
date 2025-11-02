@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './LoginPage.css';
 
-const LoginPage = ({ onLogin }) => {
+const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleGitHubLogin = () => {
