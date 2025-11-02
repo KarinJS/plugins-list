@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/KarinJS/plugins-list/compare/v1.16.0...v1.17.0) (2025-11-02)
+
+
+### Features
+
+* @karinjs/plugin-playwright ([#51](https://github.com/KarinJS/plugins-list/issues/51)) ([c9100ec](https://github.com/KarinJS/plugins-list/commit/c9100ec00dd7ce05bb1c4bbc6dccaa6ff4091c0c))
+
 ## [1.16.0](https://github.com/KarinJS/plugins-list/compare/v1.15.0...v1.16.0) (2025-10-31)
 
 
