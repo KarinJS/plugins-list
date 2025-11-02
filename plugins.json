@@ -582,6 +582,35 @@
           "branch": ""
         }
       ]
+    },
+    {
+      "name": "@karinjs/plugin-playwright",
+      "type": "npm",
+      "description": "karin的 playwright截图、渲染插件",
+      "home": "https://github.com/KarinJS/plugin-playwright",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/KarinJS/plugin-playwright/blob/main/LICENSE"
+      },
+      "time": "2025-11-02 21:38:00",
+      "author": [
+        {
+          "name": "Karin",
+          "home": "https://github.com/KarinJS"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/@karinjs/plugin-playwright",
+          "branch": ""
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/KarinJS/plugin-playwright",
+          "branch": "main"
+        }
+      ]
     }
   ]
 }
