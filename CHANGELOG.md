@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.18.0](https://github.com/KarinJS/plugins-list/compare/v1.17.0...v1.18.0) (2025-11-09)
+
+
+### Features
+
+* **plugins:** karin-plugin-git ([83610d6](https://github.com/KarinJS/plugins-list/commit/83610d62b45ff9b95d1cbb447ec8896611c6229f))
+* **plugins:** karin-plugin-git ([bdc689f](https://github.com/KarinJS/plugins-list/commit/bdc689f5bd597d1182479d23cdd867bc4043343e))
+
 ## [1.17.0](https://github.com/KarinJS/plugins-list/compare/v1.16.0...v1.17.0) (2025-11-02)
 
 
