@@ -248,12 +248,12 @@
       "repo": [
         {
           "type": "github",
-          "url": https://github.com/ys7zTS/karin-plugin-nekostatus",
+          "url": "https://github.com/ys7zTS/karin-plugin-nekostatus",
           "branch": "main"
         },
         {
           "type": "npm",
-          "url": https://www.npmjs.com/package/@ys7zts/karin-plugin-nekostatus",
+          "url": "https://www.npmjs.com/package/@ys7zts/karin-plugin-nekostatus",
           "branch": ""
         }
       ]
