@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.1](https://github.com/KarinJS/plugins-list/compare/v1.19.0...v1.19.1) (2025-11-30)
+
+
+### Bug Fixes
+
+* 格式错误 ([b1dd1be](https://github.com/KarinJS/plugins-list/commit/b1dd1bef44bd6021e71d75c493c014ece75ef980))
+
 ## [1.19.0](https://github.com/KarinJS/plugins-list/compare/v1.18.0...v1.19.0) (2025-11-30)
 
 
