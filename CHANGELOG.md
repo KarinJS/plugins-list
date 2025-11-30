@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/KarinJS/plugins-list/compare/v1.18.0...v1.19.0) (2025-11-30)
+
+
+### Features
+
+* 新增状态插件 ([debc59b](https://github.com/KarinJS/plugins-list/commit/debc59b911a8a1c6a2fa744f40730457c385f282))
+
 ## [1.18.0](https://github.com/KarinJS/plugins-list/compare/v1.17.0...v1.18.0) (2025-11-09)
 
 
