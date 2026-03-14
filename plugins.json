@@ -651,7 +651,7 @@
       ]
     },
     {
-      "name": "@puniyu/karin-plugin-adapter-gscore",
+      "name": "@puniyu/karin-adapter-gscore",
       "type": "npm",
       "description": "GsCore Adapter for karin",
       "home": "https://github.com/puniyu/karin-adapter-gscore",
@@ -679,6 +679,30 @@
         {
           "type": "github",
           "url": "https://github.com/puniyu/karin-adapter-gscore",
+          "branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "@karinjs/plugin-adapter-milky",
+      "type": "npm",
+      "description": "基于Karin的milky协议适配器",
+      "home": "https://github.com/KarinJS/karin-plugin-adapter-milky",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/KarinJS/karin-plugin-adapter-milky/blob/main/LICENSE"
+      },
+      "time": "2026-03-14 11:25:00",
+      "author": [
+        {
+          "name": "KarinJS",
+          "home": "https://github.com/KarinJS"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/KarinJS/karin-plugin-adapter-milky",
           "branch": "main"
         }
       ]
