@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.2](https://github.com/KarinJS/plugins-list/compare/v1.19.1...v1.19.2) (2026-03-14)
+
+
+### Bug Fixes
+
+* 更新插件信息 ([41fda20](https://github.com/KarinJS/plugins-list/commit/41fda20fa6172af0939a768ad52f61e98d88861c))
+
 ## [1.19.1](https://github.com/KarinJS/plugins-list/compare/v1.19.0...v1.19.1) (2025-11-30)
 
 
