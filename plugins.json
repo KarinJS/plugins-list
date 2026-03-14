@@ -651,7 +651,7 @@
       ]
     },
     {
-      "name": "@puniyu/karin-adapter-gscore",
+      "name": "@puniyu/karin-plugin-adapter-gscore",
       "type": "npm",
       "description": "GsCore Adapter for karin",
       "home": "https://github.com/puniyu/karin-adapter-gscore",
