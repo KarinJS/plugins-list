@@ -7,6 +7,7 @@ on:
 # 赋予 release-please-action 权限
 permissions:
   contents: write
+  id-token: write
   pull-requests: write
 jobs:
   # 设置 release-please 任务
@@ -36,8 +37,11 @@ jobs:
       # 复制插件列表到 package.json
       - run: npm run cp
         if: ${{ steps.release.outputs.release_created }}
+      # 更新 npm 到最新版本以支持 OIDC
+      - run: npm install -g npm@latest
+        if: ${{ steps.release.outputs.release_created }}
       # 发布到 npm
-      - run: npm run pub
+      - run: npm run pub --provenance
         if: ${{ steps.release.outputs.release_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
