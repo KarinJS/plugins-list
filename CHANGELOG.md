@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.2](https://github.com/KarinJS/plugins-list/compare/v1.20.1...v1.20.2) (2026-03-15)
+
+
+### Bug Fixes
+
+* **release:** add npm OIDC provenance support ([b6a5df8](https://github.com/KarinJS/plugins-list/commit/b6a5df8dfdffeecc85300d712e2ad7839863a148))
+
 ## [1.20.1](https://github.com/KarinJS/plugins-list/compare/v1.20.0...v1.20.1) (2026-03-15)
 
 
