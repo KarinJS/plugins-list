@@ -5,6 +5,10 @@
   "keywords": [],
   "license": "MIT",
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KarinJS/plugins-list"
+  },
   "type": "module",
   "exports": {
     ".": "./types.ts"
