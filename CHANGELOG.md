@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/KarinJS/plugins-list/compare/v1.19.2...v1.20.0) (2026-03-14)
+
+
+### Features
+
+* 新增适配器插件 ([ab36eed](https://github.com/KarinJS/plugins-list/commit/ab36eed05f1409ed7da3fcd661000dc8b831a9f1))
+
 ## [1.19.2](https://github.com/KarinJS/plugins-list/compare/v1.19.1...v1.19.2) (2026-03-14)
 
 
