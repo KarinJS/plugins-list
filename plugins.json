@@ -710,7 +710,7 @@
     {
       "name": "karin-plugin-reply",
       "type": "npm",
-      "description": "一个功能强大的 Karin 关键词回复插件，支持精确匹配、包含匹配、正则匹配三种模式，可为不同群组配置专属回复规则。",
+      "description": "关键词回复插件，支持精确匹配、包含匹配、正则匹配三种模式，可为不同群组配置专属回复规则。",
       "home": "https://github.com/YlovexLN/karin-plugin-reply",
       "license": {
         "name": "GPL-3.0",
