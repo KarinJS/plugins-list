@@ -706,6 +706,30 @@
           "branch": "main"
         }
       ]
+    },
+    {
+      "name": "karin-plugin-reply",
+      "type": "npm",
+      "description": "关键词回复插件，支持精确匹配、包含匹配、正则匹配三种模式，可为不同群组配置专属回复规则。",
+      "home": "https://github.com/YlovexLN/karin-plugin-reply",
+      "license": {
+        "name": "GPL-3.0",
+        "url": "https://github.com/YlovexLN/karin-plugin-reply/blob/main/LICENSE"
+      },
+      "time": "2026-03-19 15:04:37",
+      "author": [
+        {
+          "name": "YlovexLN",
+          "home": "https://github.com/YlovexLN"
+        }
+      ],
+      "repo": [
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-reply",
+          "branch": ""
+        }
+      ]
     }
   ]
 }
