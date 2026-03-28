@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/KarinJS/plugins-list/compare/v1.20.2...v1.21.0) (2026-03-28)
+
+
+### Features
+
+* karin-plugin-reply ([#64](https://github.com/KarinJS/plugins-list/issues/64)) ([b99ccf1](https://github.com/KarinJS/plugins-list/commit/b99ccf173451f2b1b7b939ea6f9eb0f33ee284a4))
+
 ## [1.20.2](https://github.com/KarinJS/plugins-list/compare/v1.20.1...v1.20.2) (2026-03-15)
 
 
