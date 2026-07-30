@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.1](https://github.com/KarinJS/plugins-list/compare/v1.22.0...v1.22.1) (2026-07-30)
+
+
+### Bug Fixes
+
+* cli ([be1c4dc](https://github.com/KarinJS/plugins-list/commit/be1c4dc5e03f6ac962b718ce750a2dfa3c368e5b))
+
 ## [1.22.0](https://github.com/KarinJS/plugins-list/compare/v1.21.0...v1.22.0) (2026-07-30)
 
 
