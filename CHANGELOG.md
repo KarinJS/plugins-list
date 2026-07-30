@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.0](https://github.com/KarinJS/plugins-list/compare/v1.21.0...v1.22.0) (2026-07-30)
+
+
+### Features
+
+* 新增插件 ([cdaf6a5](https://github.com/KarinJS/plugins-list/commit/cdaf6a550c50cba7ccabcf3b9287d0b9c79b3809))
+
 ## [1.21.0](https://github.com/KarinJS/plugins-list/compare/v1.20.2...v1.21.0) (2026-03-28)
 
 
