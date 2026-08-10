@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.0](https://github.com/KarinJS/plugins-list/compare/v1.22.1...v1.23.0) (2026-08-10)
+
+
+### Features
+
+* 新增qqbot适配器 ([e6da0d0](https://github.com/KarinJS/plugins-list/commit/e6da0d090096f6e6a458da8952a560bc92314b41))
+
 ## [1.22.1](https://github.com/KarinJS/plugins-list/compare/v1.22.0...v1.22.1) (2026-07-30)
 
 
