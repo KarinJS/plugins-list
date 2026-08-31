@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.0](https://github.com/KarinJS/plugins-list/compare/v1.23.0...v1.24.0) (2026-08-31)
+
+
+### Features
+
+* **plugins:** add karin-plugin-qbot plugin ([#69](https://github.com/KarinJS/plugins-list/issues/69)) ([3773098](https://github.com/KarinJS/plugins-list/commit/37730984a1a54f91c8e4aed6637de27f6f1d1db8))
+
 ## [1.23.0](https://github.com/KarinJS/plugins-list/compare/v1.22.1...v1.23.0) (2026-08-10)
 
 
