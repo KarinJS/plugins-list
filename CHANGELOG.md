@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.0](https://github.com/KarinJS/plugins-list/compare/v1.24.0...v1.25.0) (2026-09-09)
+
+
+### Features
+
+* 新增渲染插件 ([c423abe](https://github.com/KarinJS/plugins-list/commit/c423abeb58a1e53f2dd8cf63f6fbea5f1cc9dee8))
+
 ## [1.24.0](https://github.com/KarinJS/plugins-list/compare/v1.23.0...v1.24.0) (2026-08-31)
 
 
