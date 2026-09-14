@@ -836,6 +836,35 @@
           "branch": ""
         }
       ]
+    },
+    {
+      "name": "karin-plugin-adapter-wxoc",
+      "type": "npm",
+      "description": "Karin 微信Claw适配器 基于 ilink 协议",
+      "home": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc/blob/main/LICENSE"
+      },
+      "time": "2026-09-14 05:14:55",
+      "author": [
+        {
+          "name": "dmmdekkd",
+          "home": "https://github.com/dmmdekkd"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc",
+          "branch": "main"
+        },
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-adapter-wxoc",
+          "branch": ""
+        }
+      ]
     }
   ]
 }
