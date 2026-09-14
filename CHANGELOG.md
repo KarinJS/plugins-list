@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.26.0](https://github.com/KarinJS/plugins-list/compare/v1.25.0...v1.26.0) (2026-09-14)
+
+
+### Features
+
+* **plugins:** add karin-plugin-adapter-wxoc plugin ([#74](https://github.com/KarinJS/plugins-list/issues/74)) ([5dab50d](https://github.com/KarinJS/plugins-list/commit/5dab50d67b34ec418c53484203a1cfebcd9202d7))
+
 ## [1.25.0](https://github.com/KarinJS/plugins-list/compare/v1.24.0...v1.25.0) (2026-09-09)
 
 
