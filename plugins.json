@@ -865,6 +865,30 @@
           "branch": ""
         }
       ]
+    },
+    {
+      "name": "karin-plugin-glory-of-kings",
+      "type": "git",
+      "description": "王者荣耀营地查询：战绩、英雄、皮肤、排名、推送",
+      "home": "https://github.com/cchanlan/karin-plugin-glory-of-kings",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/cchanlan/karin-plugin-glory-of-kings/blob/master/LICENSE"
+      },
+      "time": "2026-09-28 01:30:00",
+      "author": [
+        {
+          "name": "cchanlan",
+          "home": "https://github.com/cchanlan"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/cchanlan/karin-plugin-glory-of-kings",
+          "branch": "master"
+        }
+      ]
     }
   ]
 }
