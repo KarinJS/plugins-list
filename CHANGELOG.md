@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.27.0](https://github.com/KarinJS/plugins-list/compare/v1.26.0...v1.27.0) (2026-09-28)
+
+
+### Features
+
+* 添加 karin-plugin-glory-of-kings 插件 ([#76](https://github.com/KarinJS/plugins-list/issues/76)) ([d0b2407](https://github.com/KarinJS/plugins-list/commit/d0b240789a64365b48feba8758f74faab9a2d236))
+
 ## [1.26.0](https://github.com/KarinJS/plugins-list/compare/v1.25.0...v1.26.0) (2026-09-14)
 
 
