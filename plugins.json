@@ -783,22 +783,22 @@
       "name": "karin-plugin-qbot",
       "type": "npm",
       "description": "基于Karin编写的开放平台管理端插件",
-      "home": "https://github.com/dmmdekkd/karin-plugin-qbot",
+      "home": "https://github.com/CialloJS/karin-plugin-qbot",
       "license": {
         "name": "MIT",
-        "url": "https://github.com/dmmdekkd/karin-plugin-qbot/blob/main/LICENSE"
+        "url": "https://github.com/CialloJS/karin-plugin-qbot/blob/main/LICENSE"
       },
       "time": "2026-08-31 00:00:00",
       "author": [
         {
-          "name": "dmmdekkd",
-          "home": "https://github.com/dmmdekkd"
+          "name": "CialloJS",
+          "home": "https://github.com/CialloJS"
         }
       ],
       "repo": [
         {
           "type": "github",
-          "url": "https://github.com/dmmdekkd/karin-plugin-qbot",
+          "url": "https://github.com/CialloJS/karin-plugin-qbot",
           "branch": "main"
         },
         {
@@ -841,22 +841,22 @@
       "name": "karin-plugin-adapter-wxoc",
       "type": "npm",
       "description": "Karin 微信Claw适配器 基于 ilink 协议",
-      "home": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc",
+      "home": "https://github.com/CialloJS/karin-plugin-adapter-wxoc",
       "license": {
         "name": "MIT",
-        "url": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc/blob/main/LICENSE"
+        "url": "https://github.com/CialloJS/karin-plugin-adapter-wxoc/blob/main/LICENSE"
       },
       "time": "2026-09-14 05:14:55",
       "author": [
         {
-          "name": "dmmdekkd",
-          "home": "https://github.com/dmmdekkd"
+          "name": "CialloJS",
+          "home": "https://github.com/CialloJS"
         }
       ],
       "repo": [
         {
           "type": "github",
-          "url": "https://github.com/dmmdekkd/karin-plugin-adapter-wxoc",
+          "url": "https://github.com/CialloJS/karin-plugin-adapter-wxoc",
           "branch": "main"
         },
         {
@@ -887,6 +887,35 @@
           "type": "github",
           "url": "https://github.com/cchanlan/karin-plugin-glory-of-kings",
           "branch": "master"
+        }
+      ]
+    },
+    {
+      "name": "karin-plugin-adapter-douyin",
+      "type": "npm",
+      "description": "基于 Karin 的抖音适配器",
+      "home": "https://github.com/CialloJS/karin-plugin-adapter-douyin",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/CialloJS/karin-plugin-adapter-douyin/blob/main/LICENSE"
+      },
+      "time": "2026-11-02 21:46:41",
+      "author": [
+        {
+          "name": "CialloJS",
+          "home": "https://github.com/CialloJS"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/CialloJS/karin-plugin-adapter-douyin",
+          "branch": "main"
+        },
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-adapter-douyin",
+          "branch": ""
         }
       ]
     }
