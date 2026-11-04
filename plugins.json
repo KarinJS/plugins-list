@@ -918,6 +918,35 @@
           "branch": ""
         }
       ]
+    },
+    {
+      "name": "karin-plugin-qqmusic",
+      "type": "npm",
+      "description": "QQ 音乐点歌、解析、本地曲库与多平台音源（需入群申请 API）",
+      "home": "https://github.com/zaras123/qqmusic-plugin/tree/karin",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/zaras123/qqmusic-plugin/blob/karin/LICENSE"
+      },
+      "time": "2026-10-19 16:23:22",
+      "author": [
+        {
+          "name": "zaras123",
+          "home": "https://github.com/zaras123"
+        }
+      ],
+      "repo": [
+        {
+          "type": "github",
+          "url": "https://github.com/zaras123/qqmusic-plugin",
+          "branch": "karin"
+        },
+        {
+          "type": "npm",
+          "url": "https://www.npmjs.com/package/karin-plugin-qqmusic",
+          "branch": ""
+        }
+      ]
     }
   ]
 }
