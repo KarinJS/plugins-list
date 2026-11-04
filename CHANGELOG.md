@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.28.0](https://github.com/KarinJS/plugins-list/compare/v1.27.0...v1.28.0) (2026-11-04)
+
+
+### Features
+
+* 收录 karin-plugin-qqmusic（karin 分支） ([#79](https://github.com/KarinJS/plugins-list/issues/79)) ([4ed6e32](https://github.com/KarinJS/plugins-list/commit/4ed6e324bb3cb73472bdf402971835a5f1f4b980))
+
 ## [1.27.0](https://github.com/KarinJS/plugins-list/compare/v1.26.0...v1.27.0) (2026-09-28)
 
 
