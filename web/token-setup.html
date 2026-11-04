@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karin 插件市场 - Token 设置</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .info {
+            background: #f0f9ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .steps {
+            list-style: decimal;
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        
+        .steps li {
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .steps a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .steps a:hover {
+            text-decoration: underline;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: monospace;
+            transition: border-color 0.2s;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+            margin-top: 10px;
+        }
+        
+        .btn-secondary:hover {
+            background: #e5e5e5;
+        }
+        
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #155724;
+            display: none;
+        }
+        
+        .error {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            color: #721c24;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔑 设置 GitHub Token</h1>
+        
+        <div class="info">
+            <p><strong>为什么需要这个？</strong></p>
+            <p>由于 GitHub OAuth 需要后端服务，我们提供这个页面让您可以使用个人访问令牌（Personal Access Token）来测试应用。</p>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">获取 GitHub Token 步骤：</div>
+            <ol class="steps">
+                <li>访问 <a href="https://github.com/settings/tokens" target="_blank">GitHub Settings → Tokens</a></li>
+                <li>点击 "Generate new token (classic)"</li>
+                <li>填写描述，如 "Karin Plugin Marketplace"</li>
+                <li>选择权限：
+                    <ul>
+                        <li>✓ repo (访问仓库)</li>
+                        <li>✓ read:user (读取用户信息)</li>
+                    </ul>
+                </li>
+                <li>点击 "Generate token"</li>
+                <li>复制生成的 token（只显示一次！）</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <div class="input-group">
+                <label for="token">GitHub Personal Access Token:</label>
+                <input 
+                    type="text" 
+                    id="token" 
+                    placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                />
+            </div>
+            
+            <button class="btn" onclick="saveToken()">保存并跳转到应用</button>
+            <button class="btn btn-secondary" onclick="clearToken()">清除已保存的 Token</button>
+        </div>
+        
+        <div class="success" id="success">
+            Token 已保存！正在跳转...
+        </div>
+        
+        <div class="error" id="error">
+            请输入有效的 Token
+        </div>
+    </div>
+    
+    <script>
+        function saveToken() {
+            const token = document.getElementById('token').value.trim();
+            const successDiv = document.getElementById('success');
+            const errorDiv = document.getElementById('error');
+            
+            successDiv.style.display = 'none';
+            errorDiv.style.display = 'none';
+            
+            if (!token || !token.startsWith('ghp_')) {
+                errorDiv.style.display = 'block';
+                return;
+            }
+            
+            // Save token to localStorage
+            localStorage.setItem('github_token', token);
+            
+            // Fetch user data
+            fetch('https://api.github.com/user', {
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Invalid token');
+                }
+                return response.json();
+            })
+            .then(user => {
+                localStorage.setItem('github_user', JSON.stringify(user));
+                successDiv.style.display = 'block';
+                
+                // Redirect to main app after 2 seconds
+                setTimeout(() => {
+                    window.location.href = './';
+                }, 2000);
+            })
+            .catch(error => {
+                errorDiv.textContent = '无效的 Token 或网络错误';
+                errorDiv.style.display = 'block';
+                localStorage.removeItem('github_token');
+            });
+        }
+        
+        function clearToken() {
+            localStorage.removeItem('github_token');
+            localStorage.removeItem('github_user');
+            document.getElementById('token').value = '';
+            alert('Token 已清除');
+        }
+        
+        // Check if token already exists
+        window.onload = function() {
+            const existingToken = localStorage.getItem('github_token');
+            if (existingToken) {
+                if (confirm('检测到已保存的 Token，是否直接进入应用？')) {
+                    window.location.href = './';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
