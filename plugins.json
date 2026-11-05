@@ -868,7 +868,7 @@
     },
     {
       "name": "karin-plugin-glory-of-kings",
-      "type": "git",
+      "type": "npm",
       "description": "王者荣耀营地查询：战绩、英雄、皮肤、排名、推送",
       "home": "https://github.com/cchanlan/karin-plugin-glory-of-kings",
       "license": {
